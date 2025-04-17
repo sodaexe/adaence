@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --primary-color: #fffaf7;
+  --primary-color: #fafafa;
   --secondary-color: #7a78ff;
   --accent-color: #ff6d38;
   --heading-color: #333;
   --btn-primary-bg: #333;
   --btn-secondary-bg: #8584ff;
-  --btn-accent-bg: #00a652;
+  --btn-accent-bg: #ffc412;
   --btn-primary-hover-bg: #e74c3c;
   --btn-secondary-hover-bg: #333;
   --light-color: #f9f9f9;
