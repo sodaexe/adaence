@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaense - Rétablir le lien entre les générations</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <span class="logo-icon">☕️</span>
+          <div>Ada<span>ence</span></div>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-house-icon lucide-house">
+                  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                  <path
+                    d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                </svg>
+                Accueil
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-accessibility-icon lucide-accessibility">
+                  <circle cx="16" cy="4" r="1" />
+                  <path d="m18 19 1-7-6 1" />
+                  <path d="m5 8 3-3 5.5 3-2.36 3.5" />
+                  <path d="M4.24 14.5a5 5 0 0 0 6.88 6" />
+                  <path d="M13.76 17.5a5 5 0 0 0-6.88-6" />
+                </svg>
+                Je rends visite
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-book-open-icon lucide-book-open">
+                  <path d="M12 7v14" />
+                  <path
+                    d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+                </svg>
+                Guide du partage
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-hand-helping-icon lucide-hand-helping">
+                  <path d="M11 12h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 14" />
+                  <path
+                    d="m7 18 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" />
+                  <path d="m2 13 6 6" />
+                </svg>
+                Devenir bénévole
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="btn btn-secondary">Faire un don 🫶</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Rétablissons les liens</h1>
+      <p>Et si vous offriez un peu de votre temps à ceux qui en ont le plus besoin ? Prenez rendez-vous pour partager un
+        moment avec une personne âgée isolée.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="search-container">
+      <form class="search-form">
+        <div class="form-group">
+          <label for="activity-type">Moment à partager</label>
+          <select id="activity-type">
+            <option value="meal">Un repas</option>
+            <option value="teatime">Un café/thé</option>
+            <option value="culture">Une sortie culturelle</option>
+            <option value="walk">Une promenade</option>
+            <option value="activity">Autre activité</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="location">Localisation</label>
+          <input type="text" id="location" placeholder="Votre ville">
+        </div>
+        <button type="submit" class="btn btn-primary">Rechercher 🔎</button>
+      </form>
+    </div>
+  </div>
+
+  <section id="gallery">
+    <div class="container">
+      <h2 class="section-title">Les personnalité à rencontrer</h2>
+      <p class="section-subtitle">Feuilletez les visages de celles et ceux qui attendent simplement un peu de votre
+        temps.
+        Chaque sourire porte une histoire, chaque rencontre est une promesse.</p>
+
+      <div class="photo-gallery">
+        <div class="gallery-column column-1">
+          <div class="gallery-item">
+            <img src="/images/danie-franco-ClHY-KyvI1M-unsplash.jpg" alt="Chien Pug">
+            <div class="person-overlay">
+              <h3>Charlie</h3>
+              <p>Pug • 5 ans</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/vladimir-soares-z_8Jqe0Cc-s-unsplash.jpg" alt="Chat noir et blanc">
+            <div class="person-overlay">
+              <h3>Mia</h3>
+              <p>Chat noir et blanc • 2 ans</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-column column-2">
+          <div class="gallery-item">
+            <img src="/images/tim-mossholder-FRPbQvAwY10-unsplash.jpg" alt="Lapin tête de lion">
+            <div class="person-overlay">
+              <h3>Coco</h3>
+              <p>Lapin • 1 an</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/shimo-yann-7nTFrV1xQGE-unsplash.jpg" alt="Chien Chow-chow">
+            <div class="person-overlay">
+              <h3>Rex</h3>
+              <p>Chow-chow • 4 ans</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-column column-3">
+          <div class="gallery-item">
+            <img src="/images/tatiana-zanon-MMhazsT2wtM-unsplash.jpg" alt="Chat roux">
+            <div class="person-overlay">
+              <h3>Luna</h3>
+              <p>Chat Roux • 3 ans</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/michael-matveev-Bk8zT4gLLt0-unsplash.jpg" alt="Cochon d'Inde">
+            <div class="person-overlay">
+              <h3>Biscuit</h3>
+              <p>Cochon d'Inde • 3 mois</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-column column-4">
+          <div class="gallery-item">
+            <img src="/images/quentin-mahe-a6jCS61X1Hg-unsplash.jpg" alt="Lapin nain brun">
+            <div class="person-overlay">
+              <h3>Rio</h3>
+              <p>Lapin nain brun • 5 mois</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/mohammad-samir-huHXKc_usoA-unsplash.jpg" alt="Chien Samoyed">
+            <div class="person-overlay">
+              <h3>Ruby</h3>
+              <p>Chien Samoyed • 2 ans</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="#" class="btn btn-primary">Voir tous les profils</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works">
+    <div class="container">
+      <h2 class="section-title">Comment ça marche</h2>
+      <p class="section-subtitle">Offrir un peu de votre temps, c'est offrir beaucoup.
+        Découvrez comment planifier une visite en toute simplicité.</p>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="feature-icon">🔍</div>
+          <h3 class="feature-title">1. Choisissez une rencontre</h3>
+          <p>Parcourez les profils de nos aînés et trouvez la personne avec qui vous aimeriez partager un moment
+            chaleureux.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">📝</div>
+          <h3 class="feature-title">2. Remplissez le formulaire</h3>
+          <p>Indiquez vos disponibilités et vos envies. Cela nous aide à organiser une rencontre adaptée et en toute
+            confiance.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">👋</div>
+          <h3 class="feature-title">3. Partagez un moment</h3>
+          <p>Rendez visite à la personne âgée dans un cadre bienveillant. Une discussion, une balade ou simplement
+            l'aider à une tâche ! Chaque moment compte.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">💞</div>
+          <h3 class="feature-title">4. Créez du lien</h3>
+          <p>Si le courant passe, vous pouvez revenir ! Ensemble, tissons des liens durables et combattons l'isolement
+            pas à pas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="section-title">Prêt⸱e à faire la différence ?</h2>
+      <p class="section-subtitle">Offrez un peu de votre temps, partagez un moment, créez du lien... Chaque présence
+        compte. En tendant la main à une personne âgée, vous lui offrez bien plus qu'une visite : une vraie bouffée de
+        chaleur humaine.</p>
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="#" class="btn btn-primary">Programmer une visite</a>
+        <a href="#" class="btn btn-secondary">Faire un don 🫶</a>
+        <a href="#" class="btn btn-accent">Devenir bénévole</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Adaence</h3>
+          <p>Notre mission est de recréer du lien avec les personnes âgées isolées, en leur offrant des moments de
+            partage, d'écoute et de présence.</p>
+          <div class="social-links" style="margin-top: 1rem;">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-facebook-icon lucide-facebook">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-instagram-icon lucide-instagram">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-linkedin-icon lucide-linkedin">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-twitch-icon lucide-twitch">
+                <path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Informations utiles</h3>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Liste des activités</a></li>
+            <li><a href="#">Nous contacter</a></li>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>116 Rue du Faubourg Saint-Martin<br>75010 Paris, France</p>
+          <p>Email: contact@adaence.fr<br>Tél: +33 1 23 45 67 89</p>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Adaence. Tous droits réservés.</p>
+      <p>Ce site a été développé dans le cadre d'un projet pour ADA Tech School.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
