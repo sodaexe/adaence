@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adaense - Rétablir le lien entre les générations</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="volunteer.css">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
@@ -77,9 +78,159 @@
     </div>
   </header>
 
-  <div class="container">
+  <section class="volunteer-hero">
+    <div class="container">
+      <h1>Devenir bénévole</h1>
+      <p>Rejoignez notre communauté et donnez du sens à votre temps libre. En devenant bénévole chez Adaence, vous
+        contribuez à rétablir des liens humains essentiels avec nos aînés.</p>
+    </div>
+  </section>
 
+  <div class="container">
+    <div class="volunteer-form-container">
+      <h2 class="section-title" style="margin-top: 0;">Formulaire d'inscription</h2>
+      <p class="section-subtitle">Remplissez ce formulaire pour rejoindre notre réseau de bénévoles. Nous vous
+        contacterons rapidement pour vous présenter les prochaines étapes.</p>
+
+      <form class="volunteer-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name" class="required-field">Prénom</label>
+            <input type="text" id="first-name" required placeholder="Votre prénom">
+          </div>
+          <div class="form-group">
+            <label for="last-name" class="required-field">Nom</label>
+            <input type="text" id="last-name" required placeholder="Votre nom">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="required-field">Adresse email</label>
+          <input type="email" id="email" required placeholder="exemple@email.com">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="city" class="required-field">Ville</label>
+            <input type="text" id="city" required placeholder="Votre ville">
+          </div>
+          <div class="form-group">
+            <label for="postal-code" class="required-field">Code postal</label>
+            <input type="text" id="postal-code" required placeholder="Code postal">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="availability" class="required-field">Disponibilités</label>
+          <select id="availability" required>
+            <option value="" disabled selected>Sélectionnez vos disponibilités</option>
+            <option value="weekly">Une fois par semaine</option>
+            <option value="monthly">Une fois par mois</option>
+            <option value="quarterly">Une fois par trimestre</option>
+            <option value="biannually">Une fois par semestre</option>
+            <option value="annually">Une fois par an</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="motivation" class="required-field">Votre motivation</label>
+          <textarea id="motivation" required
+            placeholder="Parlez-nous de votre motivation à devenir bénévole chez Adaence..."></textarea>
+        </div>
+
+        <div style="text-align: center; margin-top: 1rem;">
+          <button type="submit" class="btn btn-accent">Envoyer ma candidature</button>
+        </div>
+      </form>
+    </div>
   </div>
+
+  <section class="volunteer-benefits">
+    <div class="container">
+      <h2 class="section-title">Pourquoi devenir bénévole ?</h2>
+      <p class="section-subtitle">Être bénévole chez Adaence, c'est bien plus qu'une simple activité. C'est une
+        expérience enrichissante qui apporte du sens à votre vie et à celle des autres.</p>
+
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon">🌱</div>
+          <h3 class="benefit-title">Faire une différence concrète</h3>
+          <p>Chaque visite, chaque sourire partagé contribue à réduire l'isolement des personnes âgées et enrichit
+            leur quotidien.</p>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">🧠</div>
+          <h3 class="benefit-title">Acquérir de nouvelles compétences</h3>
+          <p>Développez votre empathie, votre écoute active et vos qualités relationnelles tout en vous formant à
+            l'accompagnement des aînés.</p>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">👥</div>
+          <h3 class="benefit-title">Intégrer une communauté solidaire</h3>
+          <p>Rejoignez un réseau de bénévoles engagés et participez à des événements qui renforcent le lien social au
+            sein de votre territoire.</p>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">🌟</div>
+          <h3 class="benefit-title">Donner du sens à votre temps</h3>
+          <p>Transformez votre temps libre en moments précieux de partage intergénérationnel et de transmission de
+            savoirs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="volunteer-testimonials">
+    <div class="container">
+      <h2 class="section-title">Témoignages de bénévoles</h2>
+      <p class="section-subtitle">Découvrez ce que nos bénévoles ont à dire sur leur expérience avec Adaence</p>
+
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="/images/anil-sharma-vssw0Ad6TFg-unsplash.jpg" alt="Photo de Marie" class="author-image">
+          <div>
+            <div class="testimonial-author">Marie D.</div>
+            <div class="testimonial-role">Bénévole depuis 1 an</div>
+          </div>
+        </div>
+        <div class="testimonial-quote">
+          <p>"J'ai commencé à rendre visite à Germaine il y a un an. Ce qui devait être une simple visite hebdomadaire
+            est devenu une véritable amitié. Nous partageons des recettes, des histoires et beaucoup de rires. Cette
+            expérience m'a ouvert les yeux sur la richesse que représente l'échange intergénérationnel."</p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="/images/diego-hernandez-MSepzbKFz10-unsplash.jpg" alt="Photo de Thomas" class="author-image">
+          <div>
+            <div class="testimonial-author">Thomas L.</div>
+            <div class="testimonial-role">Bénévole depuis 6 mois</div>
+          </div>
+        </div>
+        <div class="testimonial-quote">
+          <p>"Je cherchais une façon de m'engager localement et Adaence m'a permis de rencontrer Robert, un ancien
+            menuisier passionné. Nos promenades hebdomadaires sont devenues des moments que j'attends avec impatience.
+            J'apprends énormément de son expérience et de sa vision de la vie."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="section-title">Des questions ?</h2>
+      <p class="section-subtitle">Nous sommes là pour répondre à toutes vos interrogations concernant le bénévolat
+        chez Adaence. N'hésitez pas à nous contacter pour en savoir plus sur notre démarche.</p>
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="#" class="btn btn-primary">Foire aux questions</a>
+        <a href="#" class="btn btn-secondary">Contactez-nous</a>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <div class="container">
