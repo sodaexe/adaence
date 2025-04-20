@@ -21,7 +21,6 @@ const activityData = {
 };
 
 const displayElderCards = (data) => {
-  console.log('🐽', data.length);
   document.querySelector('#search-grid').replaceChildren();
 
   data.map((elder) => {
@@ -85,8 +84,6 @@ const loadElders = async (isSearching) => {
   const filtered = isSearching
     ? data.filter((elder) => activityData[elder.type] === activity)
     : data;
-
-  console.log(isSearching, filtered.length, activity);
 
   document.querySelector('#momentsCount').innerText = `${
     filtered.length
