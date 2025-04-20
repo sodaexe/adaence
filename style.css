@@ -200,6 +200,12 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
+.error-message {
+  color: red;
+  font-size: small;
+  display: none;
+}
+
 /* sections */
 .section-title {
   font-family: var(--font-family-heading);

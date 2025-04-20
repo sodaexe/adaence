@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adaense - Rétablir le lien entre les générations</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -91,11 +92,12 @@
         <div class="form-group">
           <label for="activity-type">Moment à partager</label>
           <select id="activity-type">
+            <option value="all">Tous les moments possibles</option>
             <option value="meal">Un repas</option>
             <option value="teatime">Un café/thé</option>
             <option value="culture">Une sortie culturelle</option>
-            <option value="walk">Une promenade</option>
-            <option value="activity">Autre activité</option>
+            <option value="walk">Une ballade</option>
+            <option value="other">Autre activité</option>
           </select>
         </div>
         <div class="form-group">
@@ -104,6 +106,7 @@
         </div>
         <button id="search-button" type="submit" class="btn btn-primary">Rechercher 🔎</button>
       </form>
+      <div class="error-message">* Veuillez remplir tous les champs</div>
     </div>
   </div>
 

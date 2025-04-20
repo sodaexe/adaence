@@ -7,7 +7,8 @@
   <title>Adaense - Rétablir le lien entre les générations</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../css/search.css">
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <script src="../js/search.js" defer></script>
 </head>
 
 <body>
@@ -79,7 +80,6 @@
   </header>
 
   <main>
-
     <!-- Formulaire de recherche simplifié -->
     <div class="container">
       <div class="search-search-container">
@@ -91,145 +91,26 @@
               <option value="meal">Un repas</option>
               <option value="teatime">Un café/thé</option>
               <option value="culture">Une sortie culturelle</option>
-              <option value="walk">Une promenade</option>
-              <option value="activity">Autre activité</option>
+              <option value="walk">Une ballade</option>
+              <option value="other">Autre activité</option>
             </select>
           </div>
           <div class="form-group">
             <label for="location">Localisation</label>
             <input type="text" id="location" placeholder="Votre ville">
           </div>
-          <button type="submit" class="btn btn-primary">Rechercher 🔎</button>
+          <button id="search-button" type="submit" class="btn btn-primary">Rechercher 🔎</button>
         </form>
         <div class="search-reinit">
-          <div>80 moments trouvés</div>
-          <a href="#">Réinitialiser les filtres</a>
+          <div id="momentsCount"></div>
+          <a href="search.html">Réinitialiser les filtres</a>
         </div>
+        <div class="error-message">* Veuillez remplir tous les champs</div>
       </div>
     </div>
 
     <div class="container">
-      <div class="search-grid">
-        <!-- search 1 -->
-        <div class="search-card">
-          <img src="/images/maksym-mazur-aJgAB_693_U-unsplash.jpg" alt="" class="search-image">
-          <div class="search-info">
-            <span class="badge badge-success">{{type de moment}}</span>
-            <h3 class="search-name">{{prenom}}</h3>
-            <div class="search-details">
-              <span>{{metier}} • {{age}}</span>
-              <span>{{localisation}}</span>
-            </div>
-            <p class="search-description">{{description}}</p>
-            <a href="#" class="btn btn-primary">Programmer un moment</a>
-          </div>
-        </div>
-
-        <!-- search 2 -->
-        <div class="search-card">
-          <img src="/images/vladimir-soares-z_8Jqe0Cc-s-unsplash.jpg" alt="" class="search-image">
-          <div class="search-info">
-            <span class="badge badge-info">{{type de moment}}</span>
-            <h3 class="search-name">{{prenom}}</h3>
-            <div class="search-details">
-              <span>{{metier}} • {{age}}</span>
-              <span>{{localisation}}</span>
-            </div>
-            <p class="search-description">{{description}}</p>
-            <a href="#" class="btn btn-primary">Programmer un moment</a>
-          </div>
-        </div>
-
-        <!-- search 3 -->
-        <div class="search-card">
-          <img src="/images/danie-franco-ClHY-KyvI1M-unsplash.jpg" alt="" class="search-image">
-          <div class="search-info">
-            <span class="badge badge-success">{{type de moment}}</span>
-            <h3 class="search-name">{{prenom}}</h3>
-            <div class="search-details">
-              <span>{{metier}} • {{age}}</span>
-              <span>{{localisation}}</span>
-            </div>
-            <p class="search-description">{{description}}</p>
-            <a href="#" class="btn btn-primary">Programmer un moment</a>
-          </div>
-        </div>
-
-        <!-- search 4 -->
-        <div class="search-card">
-          <img src="/images/tim-mossholder-FRPbQvAwY10-unsplash.jpg" alt="" class="search-image">
-          <div class="search-info">
-            <span class="badge badge-warning">{{type de moment}}</span>
-            <h3 class="search-name">{{prenom}}</h3>
-            <div class="search-details">
-              <span>{{metier}} • {{age}}</span>
-              <span>{{localisation}}</span>
-            </div>
-            <p class="search-description">{{description}}</p>
-            <a href="#" class="btn btn-primary">Programmer un moment</a>
-          </div>
-        </div>
-
-        <!-- search 5 -->
-        <div class="search-card">
-          <img src="/images/tatiana-zanon-MMhazsT2wtM-unsplash.jpg" alt="" class="search-image">
-          <div class="search-info">
-            <span class="badge badge-success">{{type de moment}}</span>
-            <h3 class="search-name">{{prenom}}</h3>
-            <div class="search-details">
-              <span>{{metier}} • {{age}}</span>
-              <span>{{localisation}}</span>
-            </div>
-            <p class="search-description">{{description}}</p>
-            <a href="#" class="btn btn-primary">Programmer un moment</a>
-          </div>
-        </div>
-
-        <!-- search 6 -->
-        <div class="search-card">
-          <img src="/images/quentin-mahe-a6jCS61X1Hg-unsplash.jpg" alt="" class="search-image">
-          <div class="search-info">
-            <span class="badge badge-success">{{type de moment}}</span>
-            <h3 class="search-name">{{prenom}}</h3>
-            <div class="search-details">
-              <span>{{metier}} • {{age}}</span>
-              <span>{{localisation}}</span>
-            </div>
-            <p class="search-description">{{description}}</p>
-            <a href="#" class="btn btn-primary">Programmer un moment</a>
-          </div>
-        </div>
-
-        <!-- search 7 -->
-        <div class="search-card">
-          <img src="/images/mohammad-samir-huHXKc_usoA-unsplash.jpg" alt="" class="search-image">
-          <div class="search-info">
-            <span class="badge badge-success">{{type de moment}}</span>
-            <h3 class="search-name">{{prenom}}</h3>
-            <div class="search-details">
-              <span>{{metier}} • {{age}}</span>
-              <span>{{localisation}}</span>
-            </div>
-            <p class="search-description">{{description}}</p>
-            <a href="#" class="btn btn-primary">Programmer un moment</a>
-          </div>
-        </div>
-
-        <!-- search 8 -->
-        <div class="search-card">
-          <img src="/images/shimo-yann-7nTFrV1xQGE-unsplash.jpg" alt="" class="search-image">
-          <div class="search-info">
-            <span class="badge badge-success">{{type de moment}}</span>
-            <h3 class="search-name">{{prenom}}</h3>
-            <div class="search-details">
-              <span>{{metier}} • {{age}}</span>
-              <span>{{localisation}}</span>
-            </div>
-            <p class="search-description">{{description}}</p>
-            <a href="#" class="btn btn-primary">Programmer un moment</a>
-          </div>
-        </div>
-      </div>
+      <div id="search-grid"></div>
 
       <div class="pagination">
         <a href="#" class="active">1</a>
