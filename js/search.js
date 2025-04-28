@@ -49,7 +49,7 @@ const displayElderCards = (data) => {
     const line1 = document.createElement('span');
     line1.innerText = `${elder.job} • ${elder.age}`;
     const line2 = document.createElement('span');
-    line2.innerText = elder.location;
+    line2.innerText = elder.city;
 
     details.appendChild(line1);
     details.appendChild(line2);
@@ -82,7 +82,10 @@ const loadElders = async (isSearching) => {
   const data = await res.json();
 
   const filtered = isSearching
-    ? data.filter((elder) => activityData[elder.type] === activity)
+    ? data.filter(
+        (elder) =>
+          activityData[elder.type] === activity && elder.city === userLocation
+      )
     : data;
 
   document.querySelector('#momentsCount').innerText = `${
