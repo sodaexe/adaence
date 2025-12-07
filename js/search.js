@@ -14,6 +14,7 @@ if (activity && userLocation) {
 const activityData = {
   'Tous les moments possibles': 'all',
   'Un repas': 'meal',
+  'Un déjeuner': 'meal',
   'Un café/thé': 'teatime',
   'Une sortie culturelle': 'culture',
   'Une ballade': 'walk',
@@ -77,15 +78,20 @@ const displayElderCards = (data) => {
   });
 };
 
+const normalizeCity = (city) => {
+  return city.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+};
+
 const loadElders = async (isSearching) => {
   const res = await fetch('/data/elders.json');
   const data = await res.json();
 
   const filtered = isSearching
-    ? data.filter(
-        (elder) =>
-          activityData[elder.type] === activity && elder.city === userLocation
-      )
+    ? data.filter((elder) => {
+        const matchesActivity = activity === 'all' || activityData[elder.type] === activity;
+        const matchesLocation = normalizeCity(elder.city) === normalizeCity(userLocation);
+        return matchesActivity && matchesLocation;
+      })
     : data;
 
   document.querySelector('#momentsCount').innerText = `${

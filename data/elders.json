@@ -78,5 +78,55 @@
     "description": "Musicien passionné, Samir aime improviser quelques notes et créer des moments chaleureux avec les jeunes.",
     "imageUrl": "/images/mohammad-samir-huHXKc_usoA-unsplash.jpg",
     "type": "Un repas"
+  },
+  {
+    "firstname": "Anil",
+    "age": 88,
+    "job": "Boulanger",
+    "city": "Marseille",
+    "zipcode": "13001",
+    "description": "Anil a passé sa vie à pétrir la pâte et partager sa passion pour le pain. Il adore cuisiner et transmettre ses recettes secrètes.",
+    "imageUrl": "/images/anil-sharma-vssw0Ad6TFg-unsplash.jpg",
+    "type": "Un repas"
+  },
+  {
+    "firstname": "Diego",
+    "age": 79,
+    "job": "Jardinier",
+    "city": "Nice",
+    "zipcode": "06000",
+    "description": "Diego a la main verte et un jardin rempli de fleurs. Il aime partager ses connaissances en botanique lors de belles promenades.",
+    "imageUrl": "/images/diego-hernandez-MSepzbKFz10-unsplash.jpg",
+    "type": "Une ballade"
+  },
+  {
+    "firstname": "Fiqih",
+    "age": 91,
+    "job": "Bibliothécaire",
+    "city": "Bordeaux",
+    "zipcode": "33000",
+    "description": "Fiqih a toujours adoré les livres et les histoires. Elle propose des sorties culturelles et des discussions littéraires enrichissantes.",
+    "imageUrl": "/images/fiqih-pradana-qm-SgY--sVg-unsplash.jpg",
+    "type": "Une sortie culturelle"
+  },
+  {
+    "firstname": "Hannah",
+    "age": 85,
+    "job": "Infirmière",
+    "city": "Nantes",
+    "zipcode": "44000",
+    "description": "Hannah a soigné toute sa vie et garde un grand cœur. Elle apprécie les moments de partage autour d'un bon thé et de conversations bienveillantes.",
+    "imageUrl": "/images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg",
+    "type": "Un café/thé"
+  },
+  {
+    "firstname": "Maksym",
+    "age": 83,
+    "job": "Artisan menuisier",
+    "city": "Strasbourg",
+    "zipcode": "67000",
+    "description": "Maksym a créé de ses mains toute sa vie. Il aime partager son savoir-faire et raconter ses réalisations lors de moments conviviaux.",
+    "imageUrl": "/images/maksym-mazur-aJgAB_693_U-unsplash.jpg",
+    "type": "Autre activité"
   }
 ]
